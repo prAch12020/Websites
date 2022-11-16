@@ -1,0 +1,51 @@
+#category_name{
+    text-align: center;
+    margin-top: 30px;
+}
+.search{
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+.all_products{
+    max-width: 90%;
+    margin: auto;
+}
+.all_products .sect h3{
+    color: #000;
+
+}
+.all_products .card{
+    border-radius: 1.2em;
+    display: inline-block;
+    margin: 15px 20px;
+    box-shadow: #11111130 3px 6px 12px ,
+     #11111130 6px 12px 18px ;
+}
+
+.all_products .card-body{
+    text-align: center;
+    color: black;
+}
+
+.all_products .card.col-12.col-sm-6.col-md-4{
+    width: 18rem;
+}
+
+.all_products .card-img-top{
+    max-height: 200px;
+    border-radius: 1.2em;
+}
+.all_products .act-buttons{
+    display: flex;
+}
+.all_products .card-body form{
+    margin: 0.4rem;
+}
+
+.all_products .quantity_input{
+    max-width: 60px;
+    background-color: white;
+    color: black;
+    margin-bottom: 5px;
+}
