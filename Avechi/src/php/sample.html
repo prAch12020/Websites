@@ -1,0 +1,85 @@
+<!-- include('adminfunction.php')
+
+
+$mysqli = new mysqli('localhost', 'root', '', 'avechi') or die(mysqli_error('mysqli'));
+
+$result = $mysqli->query("SELECT * FROM tbl_admins") or die($mysqli->error);
+ -->
+ <?php
+
+include_once('../adminfunction.php');
+$query = "SELECT first_name,last_name, email,gender FROM tbl_users";
+$result = mysqli_query($con, $query);
+?>
+<table border ="1" cellspacing="0" cellpadding="10">
+  <tr>
+    <th>Fname</th>
+    <th>Lname</th>
+    <th>Email</th>
+    <th>gender</th>
+    
+  </tr>
+<?php
+if (mysqli_num_rows($result) > 0) {
+  $sn=1;
+  while($data = mysqli_fetch_assoc($result)) {
+ ?>
+ <tr>
+   <td><?php echo $sn; ?> </td>
+   <td><?php echo $data['first_Name']; ?> </td>
+   <td><?php echo $data['last_name']; ?> </td>
+   <td><?php echo $data['email']; ?> </td>
+   <td><?php echo $data['gender']; ?> </td>
+   
+
+ <tr>
+ <?php
+  $sn++;}} else { ?>
+    <tr>
+     <td colspan="8">No data found</td>
+    </tr>
+
+ <?php } ?>
+ </table<!-- include('adminfunction.php')
+
+
+$mysqli = new mysqli('localhost', 'root', '', 'avechi') or die(mysqli_error('mysqli'));
+
+$result = $mysqli->query("SELECT * FROM tbl_admins") or die($mysqli->error);
+ -->
+ <?php
+
+include_once('../adminfunction.php');
+$query = "SELECT first_name,last_name, email,gender FROM tbl_users";
+$result = mysqli_query($con, $query);
+?>
+<table border ="1" cellspacing="0" cellpadding="10">
+  <tr>
+    <th>Fname</th>
+    <th>Lname</th>
+    <th>Email</th>
+    <th>gender</th>
+    
+  </tr>
+<?php
+if (mysqli_num_rows($result) > 0) {
+  $sn=1;
+  while($data = mysqli_fetch_assoc($result)) {
+ ?>
+ <tr>
+   <td><?php echo $sn; ?> </td>
+   <td><?php echo $data['first_Name']; ?> </td>
+   <td><?php echo $data['last_name']; ?> </td>
+   <td><?php echo $data['email']; ?> </td>
+   <td><?php echo $data['gender']; ?> </td>
+   
+
+ <tr>
+ <?php
+  $sn++;}} else { ?>
+    <tr>
+     <td colspan="8">No data found</td>
+    </tr>
+
+ <?php } ?>
+ </table
