@@ -1,0 +1,427 @@
+:root{
+    --green: #487f63;
+    --gray: #fdf9f0;
+    --blue: #1a2e39;
+    --brown: #f0b86c;
+}
+.back{
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.glass-back1{
+  background-image: url('../images/background.jpg');
+}
+.glass-back-others .glass-back1{
+  height: 190px;
+}
+.glass{
+    width: 98%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.hero-content{
+  padding: 30px 10px 10px 60px;
+  height: 300px;
+  width: 100%;
+}
+.picture{
+  margin-left: 70%;
+  width: 20%;
+  height: 100%;
+  background-size: cover;
+  background-position: top;
+  background-image: url('../images/slide-1.jpg');
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.prev-orders, .all-products{
+  display: flex;
+  flex-wrap: wrap;
+}
+.prev-orders > div{
+  width: 550px;
+}
+.quantity_input{
+  width: 20%;
+}
+.details-body{
+  display: flex;
+}
+  --------------------------------------------------------------
+  # Why Us
+  --------------------------------------------------------------
+  .why-us{
+    font-family: 'Albert Sans';
+  }
+  .why-us .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    background: var(--gray);
+  }
+  .why-us .box span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--blue);
+  }
+  .why-us .box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: var(--green);
+  }
+  .why-us .box p {
+    color: var(--blue);
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  .why-us .box:hover {
+    background: var(--brown);
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  }
+  .why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
+    color: var(--green);
+  }
+  
+  /*--------------------------------------------------------------
+  # Portfolio
+  --------------------------------------------------------------
+  .portfolio .portfolio-item {
+    margin-bottom: 30px;
+  }
+  .portfolio #portfolio-flters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+  }
+  .portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+  }
+  .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+    color: #aaa;
+    background: #ed0808;
+  }
+  .portfolio #portfolio-flters li:last-child {
+    margin-right: 0;
+  }
+  .portfolio .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .portfolio .portfolio-wrap::before {
+    content: "";
+    width: 280px;
+    height: 220px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;  
+    background: rgba(42, 42, 42, 0.7);
+  }
+  .portfolio .portfolio-wrap img {
+    transition: all ease-in-out 0.3s;
+  }
+  .portfolio .portfolio-wrap .portfolio-info {
+    /*text-shadow: 2px 2px 5px #111, -3px -3px 5px #111;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .portfolio .portfolio-wrap .portfolio-info h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .portfolio .portfolio-wrap .portfolio-info p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+  }
+  .portfolio .portfolio-wrap .portfolio-links {
+    text-align: center;
+    z-index: 4;
+  }
+  .portfolio .portfolio-wrap .portfolio-links a {
+    color: #fff;
+    margin: 0 5px 0 0;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  .portfolio .portfolio-wrap .portfolio-links a:hover {
+    color: #ed0808;
+  }
+  .portfolio .portfolio-wrap:hover::before {
+    opacity: 1;
+  }
+  .portfolio .portfolio-wrap:hover img {
+    transform: scale(1.2);
+  }
+  .portfolio .portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+  }
+  
+  /*--------------------------------------------------------------
+  # Portfolio Details
+  --------------------------------------------------------------
+  .portfolio-details {
+    padding-top: 40px;
+  }
+  .portfolio-details .portfolio-details-slider img {
+    width: 100%;
+  }
+  .portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #ed0808;
+  }
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ed0808;
+  }
+  .portfolio-details .portfolio-info {
+    padding: 30px;
+    box-shadow: 0px 0 30px rgba(42, 42, 42, 0.08);
+  }
+  .portfolio-details .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  .portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+  }
+  .portfolio-details .portfolio-info ul li + li {
+    margin-top: 10px;
+  }
+  .portfolio-details .portfolio-description {
+    padding-top: 30px;
+  }
+  .portfolio-details .portfolio-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .portfolio-details .portfolio-description p {
+    padding: 0;
+  }*/
+  
+  
+  
+  --------------------------------------------------------------
+  # Contact
+  --------------------------------------------------------------
+  .contact .contact-info {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .contact .contact-info i {
+    font-size: 48px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--blue);
+  }
+  .contact .contact-info address, .contact .contact-info p {
+    margin-bottom: 0;
+    color: var(--green);
+  }
+  .contact .contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--grey);
+  }
+  .contact .contact-info a {
+    color: var(--green);
+  }
+  .contact .contact-info a:hover {
+    color: var(--brown);
+  }
+  .contact .contact-address, .contact .contact-phone, .contact .contact-email {
+    margin-bottom: 20px;
+  }
+  .contact .php-email-form .error-message {
+    display: none;
+    color: var(--gray);
+    background: var(--brown);
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  .contact .php-email-form .error-message br + br {
+    margin-top: 25px;
+  }
+  .contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: var(--blue);
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  .contact .php-email-form .loading {
+    display: none;
+    background: var(--grey);
+    text-align: center;
+    padding: 15px;
+  }
+  .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  .contact .php-email-form input, .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    height: auto;
+    padding: 10px 15px;
+    border-radius: 4px;
+  }
+  .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+    border-color: var(--blue);
+  }
+  .contact .php-email-form button[type=submit] {
+    background: var(--gray);
+    border: 0;
+    padding: 10px 30px 12px 30px;
+    color: var(--blue);
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  .contact .php-email-form button[type=submit]:hover {
+    background: #6ab82a;
+  }
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @media (min-width: 768px) {
+    .contact .contact-phone {
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+    }
+    .contact .contact-address, .contact .contact-phone, .contact .contact-email {
+      padding: 20px 0;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Log in
+  --------------------------------------------------------------
+  
+  
+  .bg-image {
+    background-image: url('../../images/portfolio/portfolio-1.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  /*--------------------------------------------------------------
+  # Breadcrumbs
+  --------------------------------------------------------------
+  .breadcrumbs {
+    padding: 15px 0;
+    background: #f6f6f6;
+    min-height: 40px;
+    margin-top: 80px;
+  }
+  .breadcrumbs h2 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .breadcrumbs ol li + li {
+    padding-left: 10px;
+  }
+  .breadcrumbs ol li + li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #000;
+    content: "/";
+  }
+  @media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+      display: block !important;
+    }
+    .breadcrumbs ol {
+      display: block;
+    }
+    .breadcrumbs ol li {
+      display: inline-block;
+    }
+  }
+  */
