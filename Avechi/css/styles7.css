@@ -1,0 +1,224 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Pacifico&display=swap');
+html{
+  height: 100%;
+}
+.main{
+  color: #000;
+}
+.main .center{
+  width: 400px;  
+  overflow: hidden;  
+  margin: auto;  
+  margin: 20 0 0 450px;  
+  padding: 80px;
+  background: #000;  
+  border-radius: 15px ; 
+}
+#ship-details{
+  margin: 20px auto;
+}
+#ship-details h3{ 
+  text-align: center;
+}
+.details-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details-body form{
+  width: 600px;
+  height: 450px;
+  display: block;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.details-body button{
+  cursor: pointer;
+  font-size: 1em;
+  background-color: black;
+  color: #da3e3e;
+  border-radius: 3px;
+}
+.details-body button:hover{
+  color: white;
+}
+.details-body label{
+  font-size: 1.2em;
+  color: #000;
+}
+.details-body input{
+  width: 200px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 1.1em;
+}
+.details-body input:focus{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+}
+.details-body input:active{
+  background-color: #eee;
+  color: #da3e3e;
+}
+.order-body{
+  width: 300px;
+  height: 450px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.container{
+  display: flex;
+  align-items: center;
+}
+.button-align{
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.tablinks{
+  margin: 1em;
+  border: none;
+  width: 70px;
+  height: 60px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .5s ease
+}
+.tablinks > img{
+  display: block;
+  margin: auto;
+}
+.tablinks:hover > img{
+  transform: scale(1.1);
+  transition: transform .5s ease;
+}
+.tablinks.active{
+  width: 200px;
+  margin: 0;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all .5s ease;
+}
+#pay_options{
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px 15px;
+  box-shadow: inset 3px 3px 6px #00000020,
+              inset -3px -3px 6px #00000020,
+              inset -3px 3px 6px #00000020,
+              inset 3px -3px 6px #00000020,
+              3px 3px 6px #00000020,
+              -3px -3px 6px #00000020,
+              -3px 3px 6px #00000020,
+              3px -3px 6px #00000020;
+  width: 70%;
+}
+.tabcontent{
+  display: none;
+}
+.tabcontent button{
+  cursor: pointer;
+  background-color: #da3e3e;
+  color: white;
+  width: 15%;
+  height: 25px;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.tabcontent button:hover{
+  background-color: #fff;
+  color: #000;
+  box-shadow: 3px 3px 5px #00000020,
+              -3px -3px 5px #00000020;
+  transition: all .1s linear;
+}
+#pay_mpesa{
+  display: block;
+}
+.formpanel{
+  display: flex;
+}
+#pay_mpesa input{
+  width: 15%;
+  margin-left: 5px;
+}
+#pay_visa label{
+  display: flex;
+  align-self: center;
+  height: .6em;
+}
+#pay_visa input{
+  margin: 0 2em;
+  width: 90%;
+  height: 1.5em;
+}
+#pay_cash, #pay_mpesa{
+  line-height: 30px;
+}
+#pay_cash input[type='text']{
+  width: 50%;
+}
+.pay_main{
+  font-family: 'Pacifico';
+  font-size: 30px;
+  padding: 20px;
+}
+.pay_main h3{
+  font-size: 30px;
+  color: white;
+  }
+*/
+
+@import "templates1.css";
+@import "index2.css";
+@import "products.css";
+@import "basket.css";
+@import "payment3.css";
+@import "dash-board.css";
+body{
+  overflow-x: hidden;
+}
+
+.popup{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  z-index: 10;
+  position: absolute;
+}
+.popup a:hover{
+  color: #ed0808;
+}
+#sect{
+  padding: 0;
+}
+.add-form{
+  padding: 10px 30px;
+  margin: 5px auto;
+  border: 1px solid #111;
+  width: 70%;
+  height: 500px;
+  display: block;
+}
+.getstarted {
+  padding: 5px;
+  margin-left: 12px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #111111;
+}
+.getstarted:hover{
+  background-color: #111;
+  color: #fff;;
+}
