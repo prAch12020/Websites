@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Bremen Bd BT';
+    src: url('BremenBT-Bold.eot');
+    src: url('BremenBT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BremenBT-Bold.woff2') format('woff2'),
+        url('BremenBT-Bold.woff') format('woff'),
+        url('BremenBT-Bold.ttf') format('truetype'),
+        url('BremenBT-Bold.svg#BremenBT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
