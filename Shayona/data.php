@@ -82,7 +82,7 @@ function registerUser(){
         echo "<br><hr><p style=\"color: red\">User with the same phone number already exists</p>";
     }
     else{
-                $userDt = "INSERT INTO Users(FirstName, LastName, PhoneNo, Password, Type) VALUES ('" . $_POST['fName'] . "', '" . $_POST['lName'] . "', " . $_POST['num'] . ",'" . $_POST['pwd'] . "', 'Client');";
+                $userDt = "INSERT INTO users(FirstName, LastName, PhoneNo, Password, Type) VALUES ('" . $_POST['fName'] . "', '" . $_POST['lName'] . "', " . $_POST['num'] . ",'" . $_POST['pwd'] . "', 'Client');";
                 $sucMsg = "<p class=\"message\">Signed up successfully!</p> <a class=\"action loglog\" href=\"login.php\">Log In</a>";
                 insert($userDt, $sucMsg);
     }
